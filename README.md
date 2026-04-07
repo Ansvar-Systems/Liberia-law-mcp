@@ -38,12 +38,12 @@ This MCP server makes Liberian law **searchable, cross-referenceable, and AI-rea
 
 > Connect directly to the hosted version -- zero dependencies, nothing to install.
 
-**Endpoint:** `https://liberian-law-mcp.vercel.app/mcp`
+**Endpoint:** `https://mcp.ansvar.eu/law-lr/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add liberian-law --transport http https://liberian-law-mcp.vercel.app/mcp` |
+| **Claude Code** | `claude mcp add liberian-law --transport http https://mcp.ansvar.eu/law-lr/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -54,7 +54,7 @@ This MCP server makes Liberian law **searchable, cross-referenceable, and AI-rea
   "mcpServers": {
     "liberian-law": {
       "type": "url",
-      "url": "https://liberian-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-lr/mcp"
     }
   }
 }
@@ -67,7 +67,7 @@ This MCP server makes Liberian law **searchable, cross-referenceable, and AI-rea
   "github.copilot.chat.mcp.servers": {
     "liberian-law": {
       "type": "http",
-      "url": "https://liberian-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-lr/mcp"
     }
   }
 }
